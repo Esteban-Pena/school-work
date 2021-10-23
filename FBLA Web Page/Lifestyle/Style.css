@@ -1,0 +1,83 @@
+@media screen and (min-width:900px){
+
+
+    body{
+      margin-right: auto;
+      margin-left: auto;
+      background-color: orangered;
+    }
+
+    .Wrapper{
+       display: grid;
+       grid-gap: 4px;
+       grid-template-columns: auto;
+       grid-template-rows: auto;
+       grid-template-areas:
+       "nav nav nav nav nav"
+       "head head head head head"
+       "C1 C1 vid vid vid"
+       "D1 D1 vid vid vid"
+       "C2 C2 vid vid vid"
+       "D2 D2 vid vid vid"
+       "C3 C3 vid vid vid"
+       "D3 D3 vid vid vid"
+       "D3 D3 vid vid vid"
+       "FT FT FT FT FT";
+    }
+
+    .Nav{
+        grid-area: nav;
+        text-align: center;
+    }   
+
+    .Nav a{
+        text-decoration: none;
+        color:white;
+      }
+    
+
+    .Header{
+        grid-area: head;
+    }
+
+    .Video{
+        grid-area: vid;
+    }
+
+    .C1{
+        grid-area: C1;
+    }
+
+    .D1{
+        grid-area: D1;
+    }
+
+    .C2{
+        grid-area: C2;
+    }
+
+    .D2{
+        grid-area: D2;
+    }
+
+    .C3{
+        grid-area: C3;
+    }
+
+    .D3{
+        grid-area: D3;
+    }
+
+    .Footer{
+        grid-area: FT;
+        text-align: center;
+    }
+
+    .Box{
+        background-color: rgb(85, 85, 85);
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 150%;
+        text-align: center;
+    }
